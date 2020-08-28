@@ -1,8 +1,8 @@
 'use strict';
 
-const expect = chai.expect;
 
 describe('app: todo manager inspired by Practical JavaScript', () => {
+  const expect = chai.expect;
 
   describe('get state: read the app\'s ._state property', () => {
     // set the initial state for this grouping of tests
