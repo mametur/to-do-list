@@ -16,3 +16,8 @@ header h1 {
 	margin: 0 !important;
 	padding: 0 !important;
 }
+
+.table td,
+.table th {
+	border-top: none !important;
+}
