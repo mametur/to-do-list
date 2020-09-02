@@ -1,0 +1,30 @@
+{
+  "name": "encapsulation-week-1-starter",
+  "version": "1.0.0",
+  "description": "To Do Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mametur/encapsulation-week-1-starter.git"
+  },
+  "author": "Mamé Azad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mametur/encapsulation-week-1-starter/issues"
+  },
+  "homepage": "https://github.com/mametur/encapsulation-week-1-starter#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bootstrap": "^4.5.2",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.16.1"
+  }
+}

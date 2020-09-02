@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+		<link href="./public/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+		<title>ToDoList</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row bg-dark p-2">
+					<div class="col-12 d-flex justify-content-center">
+						<h1>A good future come with good plans</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="row bg-light pt-1">
+					<div class="col-12 col-md-6">
+						<form class="form">
+							<div class="row">
+								<div class="col-10 rome-padding">
+									<input class="form-control rome-padding" type="text" placeholder="write your Do Today" aria-label="text" />
+								</div>
+								<div class="col-2 rome-padding">
+									<button class="btn btn-outline-success" type="submit">submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-12 col-md-6">
+						<form class="form">
+							<div class="row">
+								<div class="col-10 rome-padding">
+									<input class="form-control rome-padding" type="text" placeholder="write your Do This Week" aria-label="text" />
+								</div>
+								<div class="col-2 rome-padding">
+									<button class="btn btn-outline-success" type="submit">submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row bg-light">
+					<div class="col-12 col-md-6">
+						<div>
+							<div class="row">
+								<div class="col-1 d-flex align-self-end">
+									<input type="checkbox" />
+								</div>
+
+								<div class="col-11 d-flex justify-content-center">
+									<h2>Do Today</h2>
+								</div>
+							</div>
+							<div>
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<div class="row">
+												<div class="col-1">
+													<td><input type="checkbox" /></td>
+												</div>
+												<div class="col-10">
+													<td>I have a appoint</td>
+												</div>
+												<div class="col-1">
+													<td><i class="fa fa-times"></i></td>
+												</div>
+											</div>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div>
+							<h2>Do This Week</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+		<!-- load the testing & reviewing dependencies -->
+		<script src="./lib/gremlins.js"></script>
+		<script src="./lib/chai-and-chai-dom.js"></script>
+		<script src="./lib/describe-it.js"></script>
+		<script src="./lib/deep-clone.js"></script>
+		<script src="./lib/logger.js"></script>
+		<script src="./lib/review-buttons.js"></script>
+
+		<!-- load & test the app object -->
+		<script src="./src/app.js"></script>
+		<script src="./src/app.spec.js"></script>
+
+		<!-- load your views -->
+		<script src="./src/views/render-todos.js"></script>
+
+		<!-- load your handlers -->
+		<script src="./src/handlers/toggle-completed.js"></script>
+
+		<!-- initialize the web page -->
+		<script src="./src/data.js"></script>
+		<script src="./src/init.js"></script>
+	</body>
+</html>
