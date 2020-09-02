@@ -20,21 +20,29 @@
 */
 
 const app = {
-  _state: {
-    todos: []
-  },
-  get state() {
-    return this._state;
-  },
-  set state(newState) {
-    this._state = newState
-  },
+	_stateToday: {
+		todos: [],
+	},
+	_stateWeek: {
+		todos: [],
+	},
+	get todaySate() {
+		return this._stateToday;
+	},
+	get todayList() {
+		return this._stateToday.todos;
+	},
+	set addTodayList(add) {
+		this._stateToday.todos.push(add);
+	},
 
-  toggleCompleted: function (position) {
-    if (position < 0 || this._state.todos.length <= position) {
-      return;
-    }
-    const todo = this._state.todos[position];
-    todo.completed = !todo.completed;
-  }
-}
+	/*	toggleCompleted: function (position) {
+		if (position < 0 || this._stateToday.todos.length <= position) {
+			return;
+		}
+		const todo = this._stateToday.todos[position];
+		todo.completed = !todo.completed;
+  },
+  
+  set addToDo*/
+};
