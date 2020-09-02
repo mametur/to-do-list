@@ -49,7 +49,7 @@ This user story has been developed through a branch called 'listener'.
 
 ### 2. Store Inputs into State
 
-> As a site visitor, when I click the submit buttons I want to be sure my todo text is saved.
+> As a site visitor, when I click the submit buttons I want to be sure my todo text is saved .
 
 ### Repo
 
@@ -65,4 +65,4 @@ This user story has been developed through a branch called 'storeInput'.
 
 ### javascript
 
--Add event listener two submit buttons.
+-Stored Data and Rendered.
