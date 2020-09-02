@@ -26,3 +26,23 @@ _A User can see my initial repository and live demo_
 - Package JSON install
 - Push the changes to GitHub
 - Turn on GitHub Pages
+
+### 1. Add Listener to Submit buttons
+
+> As a site visitor, when I click the submit buttons I want to see the text that I have filled it
+
+### Repo
+
+This user story has been developed through a branch called 'listener'.
+
+### HTML
+
+- add id to foms elements and buttons
+
+### CSS
+
+- Nothing has changed
+
+### javascript
+
+-Add event listener two submit buttons.
