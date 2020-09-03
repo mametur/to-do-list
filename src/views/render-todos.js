@@ -13,9 +13,6 @@ const renderTodos = (todosArr) => {
 		const checkBoxEl = document.createElement('input');
 		checkBoxEl.type = 'checkbox';
 
-		if (todo.completed) {
-			checkBoxEl.setAttribute('checked', true);
-		}
 		checkBoxEl.id = todosArr.indexOf(todo);
 		TdEl.appendChild(checkBoxEl);
 		divElSecond.appendChild(TdEl);
@@ -26,8 +23,13 @@ const renderTodos = (todosArr) => {
 		tdElSecond.innerHTML = todo.text;
 		divElThird.appendChild(tdElSecond);
 
+		if (todo.completed) {
+			checkBoxEl.setAttribute('checked', true);
+			tdElSecond.className = 'line-through';
+		}
+
 		const divElFourth = document.createElement('div');
-		divElFourth.className = 'col-1';
+		divElFourth.className = 'col-1 p-0';
 
 		const tdElLast = document.createElement('td');
 		const iEl = document.createElement('i');

@@ -6,9 +6,12 @@ const selectCheckBox = (event) => {
 	}
 
 	app.toggleCompleted(target.id);
+	const tableElement = document.getElementById('placeList');
+
+	removeAllChildNodes(tableElement);
+	tableElement.appendChild(renderTodos(app.todayList));
 
 	/*logger */
-
 	logger.push({
 		action: 'toggleCompleted',
 		event: event,

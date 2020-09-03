@@ -8,3 +8,7 @@ document.getElementById('week-form').addEventListener('submit', getUserWeekList)
 document.getElementById('placeList').addEventListener('click', selectCheckBox);
 /*remove todo */
 document.getElementById('placeList').addEventListener('click', removeTodo);
+
+/*Select All */
+
+document.getElementById('selectAll').addEventListener('click', selectAll);

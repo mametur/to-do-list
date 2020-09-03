@@ -21,3 +21,15 @@ header h1 {
 .table th {
 	border-top: none !important;
 }
+.fa {
+	display: none !important;
+}
+tr:hover .fa {
+	display: inline-block !important;
+}
+
+.line-through {
+	text-decoration-line: line-through;
+	text-decoration-style: double;
+	text-decoration-color: #e91e63;
+}

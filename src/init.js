@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 window.onload = () => {
 	// set the initial state for your app
 	app.state = deepClone(initialState);
@@ -17,3 +17,4 @@ window.onload = () => {
 		view: todosView,
 	});
 };
+*/
