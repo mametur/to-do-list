@@ -12,16 +12,14 @@ const getUserTodayList = (event) => {
 	app.addTodayList = { text: userInput, completed: false };
 	const logEntry = {
 		action: 'Add To Do Today',
-		_stateToday: app.todaySate,
+		_stateToday: app.todayState,
 	};
 	/*Remove all childs */
-	logger.push(logEntry);
-
-	function removeAllChildNodes(parent) {
-		while (parent.firstChild) {
-			parent.removeChild(parent.firstChild);
-		}
-	}
+	logger.push({
+		action: 'Add To Do Today',
+		event: event,
+		state: app.todayState,
+	});
 
 	const tableElement = document.getElementById('placeList');
 

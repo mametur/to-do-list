@@ -26,7 +26,7 @@ const app = {
 	_stateWeek: {
 		todos: [],
 	},
-	get todaySate() {
+	get todayState() {
 		return this._stateToday;
 	},
 	get todayList() {
@@ -42,5 +42,13 @@ const app = {
 		}
 		const todo = this._stateToday.todos[position];
 		todo.completed = !todo.completed;
+	},
+
+	removeTodayTodo: function (position) {
+		this.todayState.todos.splice(position, 1);
+	},
+
+	getTodayRemovedText: function (position) {
+		return app.todayState.todos[position];
 	},
 };

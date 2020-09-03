@@ -5,4 +5,6 @@ document.getElementById('week-form').addEventListener('submit', getUserWeekList)
 
 /*checkbox  */
 
-const today_row = document.getElementById('placeList').addEventListener('click', selectCheckBox);
+document.getElementById('placeList').addEventListener('click', selectCheckBox);
+/*remove todo */
+document.getElementById('placeList').addEventListener('click', removeTodo);

@@ -32,6 +32,7 @@ const renderTodos = (todosArr) => {
 		const tdElLast = document.createElement('td');
 		const iEl = document.createElement('i');
 		iEl.className = 'fa fa-times';
+		iEl.dataset.index = todosArr.indexOf(todo);
 		tdElLast.appendChild(iEl);
 		divElFourth.appendChild(tdElLast);
 
