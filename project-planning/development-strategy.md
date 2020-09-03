@@ -66,3 +66,23 @@ This user story has been developed through a branch called 'storeInput'.
 ### javascript
 
 -Stored Data and Rendered.
+
+### 3.Show completed checkbox
+
+> As a site visitor, when I click the checkbox, I want to see them as completed.
+
+### Repo
+
+This user story has been developed through a branch called 'storeInput'.
+
+### HTML
+
+- add handler js link
+
+### CSS
+
+- Nothing has changed
+
+### javascript
+
+-Stored checkbox when they clicked.

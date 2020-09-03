@@ -36,13 +36,11 @@ const app = {
 		this._stateToday.todos.push(add);
 	},
 
-	/*	toggleCompleted: function (position) {
+	toggleCompleted: function (position) {
 		if (position < 0 || this._stateToday.todos.length <= position) {
 			return;
 		}
 		const todo = this._stateToday.todos[position];
 		todo.completed = !todo.completed;
-  },
-  
-  set addToDo*/
+	},
 };
