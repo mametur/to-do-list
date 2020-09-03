@@ -86,3 +86,23 @@ This user story has been developed through a branch called 'storeInput'.
 ### javascript
 
 -Stored checkbox when they clicked.
+
+### 4. Remove today todo list
+
+> As a site visitor, when I click the remove icon, so that it can be removed from my todo list.
+
+### Repo
+
+This user story has been developed through a branch called 'delete-todo'.
+
+### HTML
+
+- add handler js link
+
+### CSS
+
+- Nothing has changed
+
+### javascript
+
+-Add Event to remove icon to remove them from todo list.
