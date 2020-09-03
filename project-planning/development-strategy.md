@@ -106,3 +106,27 @@ This user story has been developed through a branch called 'delete-todo'.
 ### javascript
 
 -Add Event to remove icon to remove them from todo list.
+
+### javascript
+
+-Stored checkbox when they clicked.
+
+### 5. Select or Unselect All Todo List
+
+> As a site visitor, when I click the checkbox it should select or unselect all todo list and also can change text decoration.
+
+### Repo
+
+This user story has been developed through a branch called 'line-through'.
+
+### HTML
+
+- add handler js link
+
+### CSS
+
+- add text-decoration property
+
+### javascript
+
+-Add Event listener and write some function to achieve goal.
