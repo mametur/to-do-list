@@ -3,6 +3,7 @@ const renderTodos = (todosArr) => {
 
 	for (const todo of todosArr) {
 		const trEl = document.createElement('tr');
+		trEl.className = 'today-row';
 		const DivEl = document.createElement('div');
 		DivEl.className = 'row';
 		const divElSecond = document.createElement('div');
@@ -27,6 +28,7 @@ const renderTodos = (todosArr) => {
 
 		const divElFourth = document.createElement('div');
 		divElFourth.className = 'col-1';
+
 		const tdElLast = document.createElement('td');
 		const iEl = document.createElement('i');
 		iEl.className = 'fa fa-times';
