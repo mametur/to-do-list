@@ -5,9 +5,10 @@ const modifyText = (event) => {
 		const inputEl = document.createElement('input');
 		inputEl.value = app.todayList[target.dataset.index].text;
 		inputEl.id = 'getInput';
+		inputEl.className = 'form-control';
 		app.cloneElement = target.cloneNode(true);
 		target.replaceWith(inputEl);
-	} else if ((target.id = 'getInput')) {
+	} else if (target.id === 'getInput') {
 		const newText = document.getElementById('getInput').value;
 		app.replaceCloneElement.innerHTML = newText;
 		target.replaceWith(app.replaceCloneElement);

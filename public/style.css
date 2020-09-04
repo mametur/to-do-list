@@ -5,7 +5,11 @@
 }
 
 /*Header*/
-
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
 header h1 {
 	color: #fff;
 	margin: 0;
@@ -32,4 +36,26 @@ tr:hover .fa {
 	text-decoration-line: line-through;
 	text-decoration-style: double;
 	text-decoration-color: #e91e63;
+}
+h2 {
+	margin-bottom: 0px !important;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 30px;
+	}
 }

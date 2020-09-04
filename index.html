@@ -1,114 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-		<link href="./public/style.css" rel="stylesheet" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-		<title>ToDoList</title>
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<div class="row bg-dark p-2">
-					<div class="col-12 d-flex justify-content-center">
-						<h1>A good future comes with good plans</h1>
-					</div>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+	<link href="./public/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+	<title>ToDoList</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row bg-dark p-2">
+				<div class="col-12 d-flex justify-content-center">
+					<h1>A good future comes with good plans</h1>
 				</div>
 			</div>
-		</header>
-		<section>
-			<div class="container">
-				<div class="row bg-light pt-1">
-					<div class="col-12 col-md-6">
-						<form class="form" id="today-form">
-							<div class="row">
-								<div class="col-10 rome-padding">
-									<input id="text-today" class="form-control rome-padding" type="text" placeholder="write your Do Today" aria-label="text" />
-								</div>
-								<div class="col-2 rome-padding">
-									<button id="submit-today" class="btn btn-outline-success" type="submit">submit</button>
-								</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="row bg-light pt-1">
+				<div class="col-12">
+					<form class="form" id="today-form">
+						<div class="row">
+							<div class="col-10 col-md-11 rome-padding">
+								<input id="text-today" class="form-control rome-padding" type="text"
+									placeholder="write your Do Today" aria-label="text" />
 							</div>
-						</form>
-					</div>
-					<div class="col-12 col-md-6">
-						<form class="form" id="week-form">
-							<div class="row">
-								<div class="col-10 rome-padding">
-									<input id="text-week" class="form-control rome-padding" type="text" placeholder="write your Do This Week" aria-label="text" />
-								</div>
-								<div class="col-2 rome-padding">
-									<button id="submit-week" class="btn btn-outline-success" type="submit">submit</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="container">
-				<div class="row bg-light">
-					<div class="col-12 col-md-6">
-						<div>
-							<div class="row">
-								<div class="col-1 d-flex align-self-end">
-									<input id="selectAll" type="checkbox" />
-								</div>
-
-								<div class="col-11 d-flex justify-content-center">
-									<h2>Do Today</h2>
-								</div>
-							</div>
-							<div>
-								<table id="placeList" class="table table-hover"></table>
+							<div class="col-2 col-md-1 rome-padding d-flex">
+								<button id="submit-today" class="btn btn-outline-success btn-block"
+									type="submit">submit</button>
 							</div>
 						</div>
-					</div>
-					<div class="col-12 col-md-6">
-						<div>
-							<h2>Do This Week</h2>
-						</div>
-					</div>
-					<div></div>
+					</form>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
+	<section>
+		<div class="container">
 
-		<!-- load the testing & reviewing dependencies -->
-		<script src="./lib/gremlins.js"></script>
-		<script src="./lib/chai-and-chai-dom.js"></script>
-		<script src="./lib/describe-it.js"></script>
-		<script src="./lib/deep-clone.js"></script>
-		<script src="./lib/logger.js"></script>
-		<script src="./lib/review-buttons.js"></script>
+			<div class="row bg-light pt-1">
+				<div class="col-12 d-flex justify-content-center">
+					<h2>Do Today</h2>
+				</div>
+			</div>
+			<div class="row bg-light">
+				<div class="col-12">
+					<input id="selectAll" type="checkbox" />
+				</div>
 
-		<!-- load & test the app object -->
-		<script src="./src/app.js"></script>
-		<script src="./src/app.spec.js"></script>
+			</div>
+			<div class="row bg-light">
+				<div class="col-12">
+					<table id="placeList" class="table table-hover"></table>
+				</div>
 
-		<!-- load your views -->
-		<script src="./src/views/render-todos.js"></script>
-		<!--Logic-->
-		<script src="./src/logic/remove_child.js"></script>
-		<!-- load your handlers -->
-		<script src="./src/handlers/toggle-completed.js"></script>
-		<script src="./src/handlers/storeItemHandler.js"></script>
-		<script src="./src/handlers/checkbox_handler.js"></script>
-		<script src="./src/handlers/remove_handler.js"></script>
-		<script src="./src/handlers/selectAll_handler.js"></script>
-		<script src="./src/handlers/modify_text_handler.js"></script>
+			</div>
 
-		<!-- initialize the web page -->
-		<script src="./src/data.js"></script>
-		<script src="./src/init.js"></script>
-		<!--LISTENER-->
-		<script src="./src/listener/listener.js"></script>
-	</body>
+
+
+
+		</div>
+
+
+		</div>
+		</div>
+	</section>
+
+	<!-- load the testing & reviewing dependencies -->
+	<script src="./lib/gremlins.js"></script>
+	<script src="./lib/chai-and-chai-dom.js"></script>
+	<script src="./lib/describe-it.js"></script>
+	<script src="./lib/deep-clone.js"></script>
+	<script src="./lib/logger.js"></script>
+	<script src="./lib/review-buttons.js"></script>
+
+	<!-- load & test the app object -->
+	<script src="./src/app.js"></script>
+	<script src="./src/app.spec.js"></script>
+
+	<!-- load your views -->
+	<script src="./src/views/render-todos.js"></script>
+	<!--Logic-->
+	<script src="./src/logic/remove_child.js"></script>
+	<!-- load your handlers -->
+	<script src="./src/handlers/toggle-completed.js"></script>
+	<script src="./src/handlers/storeItemHandler.js"></script>
+	<script src="./src/handlers/checkbox_handler.js"></script>
+	<script src="./src/handlers/remove_handler.js"></script>
+	<script src="./src/handlers/selectAll_handler.js"></script>
+	<script src="./src/handlers/modify_text_handler.js"></script>
+
+	<!-- initialize the web page -->
+	<script src="./src/data.js"></script>
+	<script src="./src/init.js"></script>
+	<!--LISTENER-->
+	<script src="./src/listener/listener.js"></script>
+</body>
+
 </html>
