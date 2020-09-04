@@ -1,7 +1,6 @@
 'use strict';
 
 window.onload = () => {
-	debugger;
 	// set the initial state for your app
 	app._stateToday = deepClone(initialState);
 	console.log('app:', app);
