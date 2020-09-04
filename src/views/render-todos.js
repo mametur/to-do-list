@@ -18,9 +18,12 @@ const renderTodos = (todosArr) => {
 		divElSecond.appendChild(TdEl);
 
 		const divElThird = document.createElement('div');
+		divElThird.dataset.index = todosArr.indexOf(todo);
 		divElThird.className = 'col-10';
 		const tdElSecond = document.createElement('td');
 		tdElSecond.innerHTML = todo.text;
+		tdElSecond.id = 'modify';
+		tdElSecond.dataset.index = todosArr.indexOf(todo);
 		divElThird.appendChild(tdElSecond);
 
 		if (todo.completed) {
@@ -152,18 +155,3 @@ describe(
 	},
 	true
 );
-
-/*
-<tr>
-											<div class="row">
-												<div class="col-1">
-													<td><input type="checkbox" /></td>
-												</div>
-												<div class="col-10">
-													<td>I have a appoint</td>
-												</div>
-												<div class="col-1">
-													<td><i class="fa fa-times"></i></td>
-												</div>
-											</div>
-										</tr> */

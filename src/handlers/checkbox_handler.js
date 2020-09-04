@@ -1,7 +1,7 @@
 const selectCheckBox = (event) => {
 	const target = event.target;
 
-	if (target.nodeName !== 'INPUT') {
+	if (target.type !== 'checkbox') {
 		return;
 	}
 
