@@ -26,6 +26,13 @@ const app = {
 	_stateWeek: {
 		todos: [],
 	},
+	modifiedElement: {},
+	set cloneElement(element) {
+		this.modifiedElement = element;
+	},
+	get replaceCloneElement() {
+		return this.modifiedElement;
+	},
 	get todayState() {
 		return this._stateToday;
 	},

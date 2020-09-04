@@ -130,3 +130,23 @@ This user story has been developed through a branch called 'line-through'.
 ### javascript
 
 -Add Event listener and write some function to achieve goal.
+
+### 6. Modify Todo List
+
+> As a site visitor, I want to modify my todo lists,so that I can be sure about them at the end.
+
+### Repo
+
+This user story has been developed through a branch called 'modify-todo'.
+
+### HTML
+
+- add handler js link
+
+### CSS
+
+-Nothing has changed
+
+### javascript
+
+-Add doubleClick Event listener and write some function to achieve issue.

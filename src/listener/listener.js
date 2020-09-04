@@ -12,3 +12,7 @@ document.getElementById('placeList').addEventListener('click', removeTodo);
 /*Select All */
 
 document.getElementById('selectAll').addEventListener('click', selectAll);
+
+/*modify text */
+
+document.getElementById('placeList').addEventListener('dblclick', modifyText);
