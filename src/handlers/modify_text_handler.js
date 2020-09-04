@@ -7,7 +7,7 @@ const modifyText = (event) => {
 		inputEl.id = 'getInput';
 		app.cloneElement = target.cloneNode(true);
 		target.replaceWith(inputEl);
-	} else if ((target.id = 'getInput')) {
+	} else if (target.id === 'getInput') {
 		const newText = document.getElementById('getInput').value;
 		app.replaceCloneElement.innerHTML = newText;
 		target.replaceWith(app.replaceCloneElement);
