@@ -59,8 +59,8 @@ describe(
 
 		describe('renders no todos', () => {
 			const singleTodo = renderTodos([]);
-			it('has tagName: "UL"', () => {
-				expect(singleTodo).to.have.tagName('UL');
+			it('has tagName: "TBODY"', () => {
+				expect(singleTodo).to.have.tagName('TBODY');
 			});
 			it('has childElementCount: 0', () => {
 				expect(singleTodo).to.have.property('childElementCount', 0);
@@ -69,16 +69,16 @@ describe(
 
 		describe('renders a single todo', () => {
 			const singleTodo = renderTodos([{ text: 'hello', completed: false }]);
-			it('has tagName: "UL"', () => {
-				expect(singleTodo).to.have.tagName('UL');
+			it('has tagName: "TBODY"', () => {
+				expect(singleTodo).to.have.tagName('TBODY');
 			});
 			it('has childElementCount: 1', () => {
 				expect(singleTodo).to.have.property('childElementCount', 1);
 			});
 			describe('.children[0]', () => {
 				const childElement = singleTodo.children[0];
-				it('has tagName: "LI"', () => {
-					expect(childElement).to.have.tagName('LI');
+				it('has tagName: "TR"', () => {
+					expect(childElement).to.have.tagName('TR');
 				});
 				it('has text: "hello"', () => {
 					expect(childElement).to.have.text('hello');
@@ -88,11 +88,11 @@ describe(
 				});
 				describe('.children[0]', () => {
 					const childChildElement = childElement.children[0];
-					it('has tagName: "INPUT"', () => {
-						expect(childChildElement).to.have.tagName('INPUT');
+					it('has tagName: "DIV"', () => {
+						expect(childChildElement).to.have.tagName('DIV');
 					});
-					it('is not checked', () => {
-						expect(childChildElement).to.have.property('checked', false);
+					it('is has class name:"row"', () => {
+						expect(childChildElement).to.have.property('className', 'row');
 					});
 				});
 			});
@@ -103,16 +103,16 @@ describe(
 				{ text: 'hello', completed: false },
 				{ text: 'bye', completed: true },
 			]);
-			it('has tagName: "UL"', () => {
-				expect(doubleTodo).to.have.tagName('UL');
+			it('has tagName: "TBODY"', () => {
+				expect(doubleTodo).to.have.tagName('TBODY');
 			});
 			it('has childElementCount: 2', () => {
 				expect(doubleTodo).to.have.property('childElementCount', 2);
 			});
 			describe('.children[0]', () => {
 				const childElement = doubleTodo.children[0];
-				it('has tagName: "LI"', () => {
-					expect(childElement).to.have.tagName('LI');
+				it('has tagName: "TR"', () => {
+					expect(childElement).to.have.tagName('TR');
 				});
 				it('has text: "hello"', () => {
 					expect(childElement).to.have.text('hello');
@@ -123,17 +123,17 @@ describe(
 				describe('.children[0]', () => {
 					const childChildElement = childElement.children[0];
 					it('has tagName: "INPUT"', () => {
-						expect(childChildElement).to.have.tagName('INPUT');
+						expect(childChildElement).to.have.tagName('DIV');
 					});
-					it('is not checked', () => {
-						expect(childChildElement).to.have.property('checked', false);
+					it('has childElementCount:3 ', () => {
+						expect(childChildElement).to.have.property('childElementCount', 3);
 					});
 				});
 			});
 			describe('.children[1]', () => {
 				const childElement = doubleTodo.children[1];
-				it('has tagName: "LI"', () => {
-					expect(childElement).to.have.tagName('LI');
+				it('has tagName: "TR"', () => {
+					expect(childElement).to.have.tagName('TR');
 				});
 				it('has text: "hello"', () => {
 					expect(childElement).to.have.text('bye');
@@ -143,11 +143,11 @@ describe(
 				});
 				describe('.children[0]', () => {
 					const childChildElement = childElement.children[0];
-					it('has tagName: "INPUT"', () => {
-						expect(childChildElement).to.have.tagName('INPUT');
+					it('has tagName: "DIV"', () => {
+						expect(childChildElement).to.have.tagName('DIV');
 					});
-					it('is checked', () => {
-						expect(childChildElement).to.have.property('checked', true);
+					it('Has childElementCount: 3', () => {
+						expect(childChildElement).to.have.property('childElementCount', 3);
 					});
 				});
 			});
