@@ -23,8 +23,14 @@ const app = {
 	_stateToday: {
 		todos: [],
 	},
-	_stateWeek: {
+	_state: {
 		todos: [],
+	},
+	set state(newState) {
+		this._state = newState;
+	},
+	get state() {
+		return this._state;
 	},
 	modifiedElement: {},
 	set cloneElement(element) {
@@ -48,6 +54,13 @@ const app = {
 			return;
 		}
 		const todo = this._stateToday.todos[position];
+		todo.completed = !todo.completed;
+	},
+	toggleCompletedTest: function (position) {
+		if (position < 0 || this._state.todos.length <= position) {
+			return;
+		}
+		const todo = this._state.todos[position];
 		todo.completed = !todo.completed;
 	},
 
